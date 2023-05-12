@@ -2,7 +2,6 @@ pandas
 numpy
 scikit-learn
 matplotlib
-prettytable
 plotly
 dash-bootstrap-components
 cpi

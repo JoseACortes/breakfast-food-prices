@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 import plotly.express as px
 
 menu = pd.read_csv('data/menu.csv')
@@ -269,5 +268,7 @@ def predictions(item):
     )
     return fig
 
+
+
 if __name__ == '__main__':
-    app.run_server(debug = False)
+    app.run_server()
