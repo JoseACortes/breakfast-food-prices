@@ -29,6 +29,8 @@ def get_first_day(date):
 
 app = Dash(__name__)
 
+server = app.server
+
 menu_dropdown_component = html.Div([
     html.Div('Entree'),
     dcc.Dropdown(options=[{'label': i, 'value': i} for i in menu.query('category=="entree"')['menu_name'].unique()], value='Ham Egg and Cheese Melt', id='entree-dropdown'),
